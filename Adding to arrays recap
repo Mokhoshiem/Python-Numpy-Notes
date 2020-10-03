@@ -1,0 +1,13 @@
+# When trying to add to a numpy array we usually use np.append([list], axis= 0 | 1)
+# appending to axis 0 means adding a row
+# other wise appending to axis 1 adds a column
+# eg.
+import numpy as np
+x_array = np.arange(5, 20, 2).reshape(4,2)
+# this will output a 2d array with 4 rows and 2 cols. 
+# now we need to append a list to be the last row:
+list_to_append_as_row = [[25, 27]] # the appended arrays must gave the same dimensions.
+x_new_array = np.append(x_array, list_to_append_as_row, axis=0)
+# now lets append to the last column
+list_to_append_as_column = [[10], [20], [30], [40]] # notce here we separated each to individual list
+x_new_array_modified = np.append(x_array, list_to_append_as_colum
