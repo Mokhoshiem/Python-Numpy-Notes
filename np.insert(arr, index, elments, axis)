@@ -1,4 +1,4 @@
-# >> To insert to an existing array we usuappy use np.insert function this takes 4 arguements:
+# >> To insert to an existing array we usually use np.insert function this takes 4 arguements:
 # >> np.insert(array to insert to, index to insert in or starting from, elements to be inserted, axis= 0 for rows or 1 for columns)
 # >> the main difference between append and insert that apend adds to the end while insert inserts in a specified index.
 a = np.array([1, 2, 7, 8])
